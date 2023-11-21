@@ -9,14 +9,16 @@ const About = () => {
         A little About Me
       </h2>
       <div className="bg-gradient-to-r from-white to-red-100 rounded-lg shadow-md p-10 mt-8 flex flex-col items-center sm:flex-row">
-        <Image
-          src="/assets/image1.jpg"
-          alt="Alumni Image"
-          className="w-64 h-64 object-cover rounded-full mb-4 sm:mr-8"
-          width={100}
-          height={100}
+        
+           <Image
+           src="/assets/image1.jpg"
+           alt="Alumni Image"
+           width={256} // Set the desired width here
+           height={256} // Set the desired height here
+           className="w-64 h-64 object-cover rounded-full mb-4 sm:mr-8"
+         />
           
-        />
+        
         <p className="text-base text-justify text-gray-800 font-poppins max-w-5xl mx-auto sm:whitespace-normal">
           As an advocate, my mission is to fight for justice and be a reliable
           companion for my clients. With my experience, I understand the legal

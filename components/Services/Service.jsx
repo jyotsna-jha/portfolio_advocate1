@@ -26,7 +26,13 @@ const AlumniSuccessStories = () => {
       <div className="flex flex-wrap justify-center">
         {successStories.map((story, index) => (
           <div key={index} className="w-full md:w-72 h-80 m-5 p-3 bg-gray-200 rounded-lg shadow-md transition-transform transform-gpu hover:scale-105">
-            <Image src={story.image} alt={story.name} className="w-full h-2/5 object-cover rounded-t-lg" width={100} height={100}  />
+            <Image
+              src={story.image}
+              alt={story.name}
+              width={300} // Set the desired width here
+              height={200} // Set the desired height here
+              className="w-full h-2/5 object-cover rounded-t-lg"
+            />
             <h3 className="mt-2 text-2xl font-semibold text-gray-800 font-poppins">{story.name}</h3>
             <p className="text-gray-600 text-sm">{story.achievement}</p>
           </div>
