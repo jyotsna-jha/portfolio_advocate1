@@ -5,21 +5,18 @@ import Image from "next/image";
 const About = () => {
   return (
     <div id="about" className="max-w-6xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-gray-800 font-poppins mt-5 pb-2 after:content-after after:block after:absolute after:w-24 after:h-2 after:bg-red-400">
+      <h2 className="text-3xl font-bold text-gray-800 font-poppins mt-5 pb-2 after:content-after after:block after:w-24 after:h-2 after:bg-red-400">
         A little About Me
       </h2>
       <div className="bg-gradient-to-r from-white to-red-100 rounded-lg shadow-md p-10 mt-8 flex flex-col items-center sm:flex-row">
-        
-           <Image
-           src="/assets/image1.jpg"
-           alt="Alumni Image"
-           width={256} // Set the desired width here
-           height={256} // Set the desired height here
-           className="w-64 h-64 object-cover rounded-full mb-4 sm:mr-8"
-         />
-          
-        
-        <p className="text-base text-justify text-gray-800 font-poppins max-w-5xl mx-auto sm:whitespace-normal">
+        <Image
+          src="/assets/image1.jpg"
+          alt="Alumni Image"
+          width={256}
+          height={256}
+          className="w-64 h-64 object-cover rounded-full mb-4 sm:mr-8"
+        />
+        <p className="text-sm sm:text-base text-justify text-gray-800 font-poppins max-w-xl sm:max-w-5xl mx-auto sm:whitespace-normal">
           As an advocate, my mission is to fight for justice and be a reliable
           companion for my clients. With my experience, I understand the legal
           system inside out and the challenges people face. I approach every
