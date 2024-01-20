@@ -36,6 +36,8 @@ const ContactCard = () => {
               Phone Number
             </h2>
             <p className="text-gray-600 mb-2">+977 9852090365</p>
+            <p className="text-gray-600 mb-2">+977 9818699977</p>
+
             <p className="text-gray-600 mb-4">Response time: 9am to 9pm</p>
             <Link href="/" className="text-red-400 hover:underline">
               Call Now <span>-&gt;</span>

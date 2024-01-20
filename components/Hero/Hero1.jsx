@@ -1,11 +1,13 @@
 // hero.jsx
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef,useState} from "react";
 import lottie from "lottie-web";
 import Link from "next/link";
 
+
 const Herosection = ({ title, subtitle }) => {
   const lottieContainerRef = useRef(null);
+  
 
   useEffect(() => {
     const animation = lottie.loadAnimation({
@@ -20,6 +22,15 @@ const Herosection = ({ title, subtitle }) => {
       animation.destroy();
     };
   }, []);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const smoothScroll = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false);
+    }};
 
   return (
     <main className="bg-gradient-to-b from-white to-red-300 via-gray-100 font-poppins">
@@ -34,13 +45,15 @@ const Herosection = ({ title, subtitle }) => {
               to upholding justice, providing expert counsel, and passionately
               advocating for the rights and well-being of my clients.
             </p>
-            <Link href="/englishtypingtest">
+            <a onClick={() => smoothScroll('contact')}>
               <div className="mt-6">
-                <button className="mt-2 bg-red-400 text-white rounded-full py-1.5 px-6 hover:bg-white hover:text-[#161617] hover:border hover:border-[#161617] transition-all duration-500">
+                <button 
+
+                className="mt-2 bg-red-400 text-white rounded-full py-1.5 px-6 hover:bg-white hover:text-[#161617] hover:border hover:border-[#161617] transition-all duration-500">
                   Contact
                 </button>
               </div>
-            </Link>
+            </a>
           </div>
 
           <div className="hidden md:flex justify-end items-center">
