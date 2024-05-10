@@ -23,7 +23,7 @@ const Footer = () => {
           <FaFacebook size={24} />
         </a>
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/advocatebalramjha/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:bg-gray-800 hover:border-white hover:rounded-full p-2 inline-flex flex-col items-center transition"
