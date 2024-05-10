@@ -31,7 +31,7 @@ const Resume = () => {
           </h2>
           <div className="mb-4">
             <h3 className="text-lg font-semibold">Advocate</h3>
-            <p className="text-gray-700">Sajha and Law Firm | 2023 - Present</p>
+            <p className="text-gray-700">Sajha Law Firm and Legal Research | 2023 - Present</p>
             <ul className="list-disc pl-6 text-gray-700">
               <li>Represented clients in various civil and criminal cases.</li>
               <li>Conducted legal research and prepared case strategies.</li>
